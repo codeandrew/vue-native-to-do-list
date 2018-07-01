@@ -1,13 +1,13 @@
 <template>
   <view class="container">
-    <Button :title="message" :on-press="handleBtnPress" />
+    <Button rounded dark :title="message" :on-press="handleBtnPress" />
     <todo-manager />
   </view>
 </template>
 
 <script>
 import TodoManager from "./src/todoManager";
-
+import { Container, Header, Content, Button, Text } from 'native-base';
 export default {
   components: { TodoManager },
   data : function(){

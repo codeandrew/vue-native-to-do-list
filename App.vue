@@ -1,11 +1,15 @@
 <template>
   <view class="container">
     <Button :title="message" :on-press="handleBtnPress" />
+    <todo-manager />
   </view>
 </template>
 
 <script>
+import TodoManager from "./src/todoManager";
+
 export default {
+  components: { TodoManager },
   data : function(){
     return {
       message :  "Vue Native Button"
